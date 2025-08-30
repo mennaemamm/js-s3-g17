@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="task4.css">
+  <title>Task4</title>
+</head>
+<body>
+  <button id="button1">click</button>
+  <button id="button2">Change Background</button>
+
+  <script>
+   
+document.getElementById("button1").addEventListener("click", function () {
+      console.log("Button clicked");
+
+
+      setTimeout(function () {
+        alert("Welcome");
+      }, 2000);
+    });
+
+    
+    setInterval(function () {
+      console.log("Hello");
+    }, 1000);
+
+    
+    document.getElementById("button2").addEventListener("click", function () {
+      document.body.style.backgroundColor = "pink";
+    });
+  </script>
+</body>
+</html>
